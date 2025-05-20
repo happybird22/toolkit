@@ -3,6 +3,7 @@ import { combatReducer } from "../reducers/combatReducers";
 import Controls from "../components/Controls";
 import NewCombatantForm from "../components/NewCombatantForm";
 import TurnOrderList from "../components/TurnOrderList";
+import { initialCombatants } from "../data/initialCombatants";
 
 
 const STORAGE_KEY = "combat-tracker-state";
@@ -25,7 +26,7 @@ function CombatTrackerPage() {
     return (
         <div className="app-container">
             <header className="header">
-                <img src="" alt="" />
+                <img src="./assets/Transparent-01.png" alt="logo" />
                 <h1>Dungeons Not Dating Presents: Combat Tracker!</h1>
                 <h3>
                     Simply add player characters and monsters with their name, HP, and initiative,

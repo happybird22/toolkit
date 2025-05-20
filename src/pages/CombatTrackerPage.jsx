@@ -1,5 +1,8 @@
 import react, { useReducer, useEffect } from "react";
-import CombatantCard from "../components/CombatantCard";
+import { combatReducer } from "../reducers/combatReducers";
+import Controls from "../components/Controls";
+import NewCombatantForm from "../components/NewCombatantForm";
+import TurnOrderList from "../components/TurnOrderList";
 
 
 const STORAGE_KEY = "combat-tracker-state";
@@ -31,10 +34,12 @@ function CombatTrackerPage() {
             </header>
 
             <main className="tracker-main">
-
+                <NewCombatantForm dispatch={dispatch} />
+                <Controls dispatch={dispatch} />
+                <TurnOrderList dispatch={dispatch} />
             </main>
         </div>
-    )
+    );
 }
 
-export default CombatTrackerPage
+export default CombatTrackerPage;

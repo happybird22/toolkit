@@ -20,7 +20,7 @@ Route Path	Page Name	Description
 /favorites	Saved Tips	View and manage user-saved helpful hints
 
 ⚙️ Technologies Used
-React (Vite or Create React App)
+React
 
 React Router DOM
 
@@ -43,10 +43,10 @@ BrowseTips	-Fetches and displays API data
 SearchBar	-Handles search/filter for tips
 TipCard	-Displays a single tip/resource
 Favorites	-Lists user-saved tips
-Footer	-Themed footer with D&D branding
+
 
 🌐 API Plan
-Primary Option: D&D 5e API (https://www.dnd5eapi.co/)
+Primary Option: 5e Bits API https://5e-bits.github.io/docs/
 
 No API key required
 

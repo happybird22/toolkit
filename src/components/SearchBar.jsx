@@ -6,7 +6,7 @@ function SearchBar({ search, onChange }) {
             type="text"
             placeholder='Search spells...'
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => onChange(e.target.value)}
         />
     );
 }

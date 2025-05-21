@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const CombatantCard = ({ combatant, dispatch, isActive }) => {
     const { id, name, hp, initiative } = combatant;

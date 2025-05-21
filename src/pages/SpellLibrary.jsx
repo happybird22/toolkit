@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from '../components/SearchBar';
 import SpellCard from '../components/SpellCard';
+import CombatTrackerBtn from '../components/CombatTrackerBtn';
+import HomeBtn from '../components/HomeBtn';
 
 function SpellLibrary() {
     const [spells, setSpells] = useState([]);
@@ -71,6 +73,8 @@ function SpellLibrary() {
                     />
                 ))}
             </ul>
+            <HomeBtn />
+            <CombatTrackerBtn />
         </div>
     );
 }

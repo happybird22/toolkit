@@ -10,7 +10,8 @@ export const combatReducer = (state, action) => {
             return state.filter(c => c.id !== action.payload.id);
 
         case "NEXT_TURN":
-            return ([...state.slice(1), state[0]]);
+            if (state.length === 0) return state
+            return [...state.slice(1), state[0]];
 
         case "UPDATE_HP":
             return state.map(c =>

@@ -1,8 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import SpellLibraryBtn from '../components/SpellLibraryBtn';
+import CombatTrackerBtn from '../components/CombatTrackerBtn';
 
-function Home() {
-    const navigate = useNavigate();
+function HomePage() {
 
     return (
         <div className='home-page'>
@@ -12,11 +11,11 @@ function Home() {
             </p>
 
             <div className='nav-buttons'>
-                <button onClick={() => navigate('/spells')}> Go to Spell Library </button>
-                <button onClick={() => navigate('/combat')}> Open Combat Tracker </button>
+                <SpellLibraryBtn />
+                <CombatTrackerBtn />
             </div>
         </div>
     );
 }
 
-export default Home;
+export default HomePage;

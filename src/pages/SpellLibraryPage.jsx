@@ -76,7 +76,7 @@ function SpellLibraryPage() {
 
     return (
         <div className='spell-library-page'>
-            <h2 className='page-title'>Spell Library</h2>
+            <h1 className='page-title'>Spell Library</h1>
 
             <div className='spell-library-controls'>
                 <SearchBar search={search} onChange={setSearch} />

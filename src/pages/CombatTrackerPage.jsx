@@ -27,7 +27,7 @@ function CombatTrackerPage() {
     return (
         <div className="app-container">
             <header className="header">
-                <h1>Dungeons Not Dating Presents: Combat Tracker!</h1>
+                <h1 className="page-title">Dungeons Not Dating Presents: Combat Tracker!</h1>
                 <h3>
                     Simply add player characters and monsters with their name, HP, and initiative,
                     and let this tracker sort them for you. Make managing turns and health quick and easy!
@@ -39,7 +39,7 @@ function CombatTrackerPage() {
                 <Controls dispatch={dispatch} />
                 <TurnOrderList combatants={combatants} dispatch={dispatch} />
             </main>
-            <footer>
+            <footer className="nav-buttons">
                 <HomeBtn />
                 <SpellLibraryBtn />
             </footer>

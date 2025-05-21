@@ -1,10 +1,9 @@
-import React, { useReducer, useEffect } from "react";
+import { useReducer, useEffect } from "react";
 import { combatReducer } from "../reducers/combatReducers";
 import Controls from "../components/Controls";
 import NewCombatantForm from "../components/NewCombatantForm";
 import TurnOrderList from "../components/TurnOrderList";
 import { initialCombatants } from "../data/initialCombatants";
-import logo from "../assets/Favicion-01.png";
 import HomeBtn from "../components/HomeBtn";
 import SpellLibraryBtn from "../components/SpellLibraryBtn";
 
@@ -28,7 +27,6 @@ function CombatTrackerPage() {
     return (
         <div className="app-container">
             <header className="header">
-                <img src={logo} alt="logo" />
                 <h1>Dungeons Not Dating Presents: Combat Tracker!</h1>
                 <h3>
                     Simply add player characters and monsters with their name, HP, and initiative,

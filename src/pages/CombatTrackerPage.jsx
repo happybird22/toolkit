@@ -4,6 +4,7 @@ import Controls from "../components/Controls";
 import NewCombatantForm from "../components/NewCombatantForm";
 import TurnOrderList from "../components/TurnOrderList";
 import { initialCombatants } from "../data/initialCombatants";
+import Header from "../components/Header";
 import HomeBtn from "../components/HomeBtn";
 import SpellLibraryBtn from "../components/SpellLibraryBtn";
 
@@ -26,7 +27,11 @@ function CombatTrackerPage() {
 
     return (
         <div className="app-container">
-            <header className="header">
+            <Header>
+                <HomeBtn />
+                <SpellLibraryBtn />
+            </Header>
+            <header className="title">
                 <h1 className="page-title">Dungeons Not Dating Presents: Combat Tracker!</h1>
                 <p>
                     Simply add player characters and monsters with their name, HP, and initiative,

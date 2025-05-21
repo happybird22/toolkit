@@ -27,39 +27,31 @@ const CombatantCard = ({ combatant, dispatch, isActive }) => {
     };
 
     return (
-        <div
-            className="combatant-card"
-            style={{
-                border: isActive ? "3px solid limegreen" : "1px solid #ccc",
-                padding: "1rem",
-                borderRadius: "8px",
-                backgroundColor: isActive ? "#f1fff1" : "#fff"
-            }}
-        >
+        <div className={`combatant-card ${isActive ? 'active' : ''}`}>
             <h3>{name} {isActive && <span>🎯</span>}</h3>
             <p>Initiative: {initiative}</p>
+
             <label>
                 HP:
                 <input
                     type="number"
                     value={hp}
                     onChange={handleHPChange}
-                    style={{ width: "60px", marginLeft: "0.5rem" }}
                 />
             </label>
 
-            <div style={{ marginTop: "0.5rem" }}>
+            <div className='hp-adjust'>
                 <input
                     type="number"
                     value={adjustAmount}
+                    placeholder='#'
                     onChange={(e) => setAdjustAmount(e.target.value)}
-                    style={{ width: "60px", marginRight: "0.5rem" }}
                 />
                 <button onClick={() => handleAdjustHP(1)}>+ HP</button>
-                <button onClick={() => handleAdjustHP(-1)} style={{ marginLeft: "0.5rem"}}>- HP</button>
+                <button onClick={() => handleAdjustHP(-1)}>- HP</button>
             </div>
 
-            <button onClick={handleRemove} style={{ marginTop: "0.5rem" }}>
+            <button onClick={handleRemove}>
                 Remove
             </button>
         </div>

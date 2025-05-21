@@ -1,5 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Header from '../components/Header';
+import HomeBtn from '../components/HomeBtn';
+import SpellLibraryBtn from '../components/SpellLibraryBtn';
 
 function SpellDetailPage() {
     const { slug } = useParams();
@@ -25,6 +28,10 @@ function SpellDetailPage() {
 
     return (
         <div className='spell-detail-page'>
+            <Header>
+                <HomeBtn />
+                <SpellLibraryBtn />
+            </Header>
             <Link to="/" className='back-link'>Back to Spell Library</Link>
             <h2>{spell.name}</h2>
             <p><strong>Level:</strong> {spell.level}</p>

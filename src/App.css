@@ -42,7 +42,6 @@ input[type="checkbox"] {
   accent-color: #E6A20E;
   cursor: pointer;
 }
-
 input[type="text"],
 input[type="number"] {
   padding: 0.4rem 0.6rem;
@@ -87,12 +86,6 @@ input[type="number"] {
   margin: 0.5rem 0;
 }
 
-.logo {
-  width: 25rem;
-  height: auto;
-  margin-bottom: .2rem;
-}
-
 h1 {
   color: #ec2127;
   margin: 0;
@@ -130,6 +123,7 @@ button:hover {
 p {
   text-align: center;
   font-size: 1.1rem;
+  color: #ec2127;
 }
 
 p.error {
@@ -148,4 +142,100 @@ p.loading {
   border-radius: 12px;
   border: 2px solid #767e79;
   color: #E6A20E;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #767e79;
+  margin-bottom: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.brought-by {
+  font-size: 1.5rem;
+  color: #E6A20E;
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+}
+
+.header-controls {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.combatant-card {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.combatant-card.active {
+  border: 3px solid limegreen;
+  background-color: #f1fff1;
+}
+
+.combatant-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.combatant-card p {
+  margin: 0.25rem 0 1rem 0;
+  font-weight: bold;
+}
+
+.combatant-card label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.combatant-card input[type="number"] {
+  width: 70px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+}
+
+.combatant-card .hp-adjust {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+
+.combatant-card button {
+  background-color: #eee;
+  color: #000;
+  border: 1px solid #aaa;
+  padding: .4rem .75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.combatant-card button:hover {
+  background-color: #ddd;
 }

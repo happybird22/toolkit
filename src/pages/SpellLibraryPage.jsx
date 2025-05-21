@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import SearchBar from '../components/SearchBar';
 import SpellCard from '../components/SpellCard';
+import Header from '../components/Header';
 import CombatTrackerBtn from '../components/CombatTrackerBtn';
 import HomeBtn from '../components/HomeBtn';
 
@@ -76,6 +77,10 @@ function SpellLibraryPage() {
 
     return (
         <div className='spell-library-page'>
+            <Header>
+                <HomeBtn />
+                <CombatTrackerBtn />
+            </Header>
             <h1 className='page-title'>Spell Library</h1>
 
             <div className='spell-library-controls'>

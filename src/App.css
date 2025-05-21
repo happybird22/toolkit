@@ -15,7 +15,6 @@ body {
 .header,
 .page-title {
   text-align: center;
-  margin-bottom: 2rem;
   border-bottom: 2px solid #767e79;
   padding-bottom: 1rem;
   font-size: 2rem;
@@ -149,7 +148,6 @@ p.loading {
   align-items: center;
   padding: 1rem 0;
   border-bottom: 2px solid #767e79;
-  margin-bottom: 1rem;
 }
 
 .logo-container {
